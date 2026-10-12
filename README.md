@@ -1,8 +1,8 @@
-Student Performance Data Analysis
+# Student Performance Data Analysis
 
 A Python-based exploratory data analysis project that investigates students' study habits and self-reported academic performance using survey data collected through Google Forms.
 
-Project Overview
+## Project Overview
 
 Academic performance may be associated with different factors, including class attendance, study duration, sleep habits, academic confidence, and time management.
 
@@ -10,73 +10,79 @@ This project analyzes survey responses from approximately 50 students to explore
 
 The project is intended for educational purposes and demonstrates the practical application of data analysis concepts.
 
-Objectives
-Explore students' study habits and self-reported academic performance.
-Examine attendance patterns across GPA/CGPA categories.
-Compare academic confidence with reported GPA/CGPA.
-Investigate GPA/CGPA distributions across academic disciplines.
-Explore daily study hours in relation to GPA/CGPA.
-Visualize the distributions of academic confidence and daily study hours.
-Demonstrate a preliminary, rule-based GPA review process.
-Dataset Description
+## Objectives
+
+* Explore students' study habits and self-reported academic performance.
+* Examine attendance patterns across GPA/CGPA categories.
+* Compare academic confidence with reported GPA/CGPA.
+* Investigate GPA/CGPA distributions across academic disciplines.
+* Explore daily study hours in relation to GPA/CGPA.
+* Visualize the distributions of academic confidence and daily study hours.
+* Demonstrate a preliminary, rule-based GPA review process.
+
+## Dataset Description
 
 The dataset was collected using a Google Forms survey.
 
 It includes information about:
 
-Age group and academic background.
-Academic discipline and year of study.
-Daily study hours outside classes.
-Sleep duration.
-Class attendance frequency and approximate attendance percentage.
-Assignment completion and lesson revision habits.
-Non-academic internet and social media usage.
-Self-reported GPA/CGPA.
-Overall academic performance and academic confidence.
-Perceived influences and challenges related to academic performance.
+* Age group and academic background.
+* Academic discipline and year of study.
+* Daily study hours outside classes.
+* Sleep duration.
+* Class attendance frequency and approximate attendance percentage.
+* Assignment completion and lesson revision habits.
+* Non-academic internet and social media usage.
+* Self-reported GPA/CGPA.
+* Overall academic performance and academic confidence.
+* Perceived influences and challenges related to academic performance.
 
 The dataset contains approximately 50 responses. Its exact row and column counts should be confirmed from the CSV used for the analysis.
 
-Privacy: The original response file should not be uploaded to a public repository if it contains timestamps, personal information, or other identifying details.
+**Privacy:** The original response file should not be uploaded to a public repository if it contains timestamps, personal information, or other identifying details.
 
-Visualizations
+## Visualizations
 
 The project includes six visualizations.
 
-1. Class Attendance Percentage vs GPA/CGPA
+### 1. Class Attendance Percentage vs GPA/CGPA
 
 Compares attendance categories with the distribution of reported GPA/CGPA categories to explore possible associations between attendance and academic performance.
 
-2. Academic Confidence vs GPA/CGPA
+### 2. Academic Confidence vs GPA/CGPA
 
 Examines how reported GPA/CGPA categories are distributed across students' self-reported academic confidence levels.
 
-3. Academic Discipline vs GPA/CGPA
+### 3. Academic Discipline vs GPA/CGPA
 
 Compares the distribution of GPA/CGPA categories across the academic disciplines represented in the survey.
 
-4. Daily Study Hours vs GPA/CGPA
+### 4. Daily Study Hours vs GPA/CGPA
 
 Explores how GPA/CGPA categories are distributed among respondents reporting different amounts of daily study time outside classes.
 
-5. Distribution of Academic Confidence
+### 5. Distribution of Academic Confidence
 
 Shows the number of respondents in each academic confidence category.
 
-6. Distribution of Daily Study Hours
+### 6. Distribution of Daily Study Hours
 
 Displays the proportions of respondents in the different daily study-hour categories.
 
 The visualizations describe patterns in the collected sample. They do not establish that a particular habit causes better or worse academic performance.
 
-Technologies Used
-Python — Programming language.
-Pandas — Data manipulation and analysis.
-NumPy — Numerical operations.
-Matplotlib — Data visualization.
-Jupyter Notebook — Interactive analysis and documentation.
-Google Forms — Survey data collection.
-Project Structure
+## Technologies Used
+
+* **Python** — Programming language.
+* **Pandas** — Data manipulation and analysis.
+* **NumPy** — Numerical operations.
+* **Matplotlib** — Data visualization.
+* **Jupyter Notebook** — Interactive analysis and documentation.
+* **Google Forms** — Survey data collection.
+
+## Project Structure
+
+```text
 student-performance-data-analysis/
 │
 ├── data/
@@ -98,86 +104,97 @@ student-performance-data-analysis/
 ├── academicRisk.py
 ├── requirements.txt
 └── README.md
+```
 
-The chart filenames above are suggested names. Use the filenames generated by your own code if they are different. Include academicRisk.py only if you are keeping your separate risk-analysis script in the project.
+The chart filenames above are suggested names. Use the filenames generated by your own code if they are different. Include `academicRisk.py` only if you are keeping your separate risk-analysis script in the project.
 
-Installation
+## Installation
 
 Make sure Python is installed on your computer. Open a terminal in the project directory and install the required libraries:
 
+```bash
 pip install pandas numpy matplotlib jupyter ipykernel
+```
 
-Alternatively, install the packages listed in requirements.txt:
+Alternatively, install the packages listed in `requirements.txt`:
 
+```bash
 pip install -r requirements.txt
-How to Run the Project
-Open the project folder in Visual Studio Code or Jupyter Notebook.
-Ensure that the required Python libraries are installed.
-Place the original survey CSV in the location expected by your notebook.
-Open student_performance_analysis.ipynb.
-Select the correct Python kernel.
-Run the notebook cells from top to bottom.
-Review the charts, summaries, and interpretations.
-Save the notebook with its executed outputs.
-Check that the visualization images have been saved in the appropriate folder.
+```
+
+## How to Run the Project
+
+1. Open the project folder in Visual Studio Code or Jupyter Notebook.
+2. Ensure that the required Python libraries are installed.
+3. Place the original survey CSV in the location expected by your notebook.
+4. Open `student_performance_analysis.ipynb`.
+5. Select the correct Python kernel.
+6. Run the notebook cells from top to bottom.
+7. Review the charts, summaries, and interpretations.
+8. Save the notebook with its executed outputs.
+9. Check that the visualization images have been saved in the appropriate folder.
 
 If your existing code uses a different CSV path, keep that path or update the notebook's data-loading cell to match your actual project structure.
 
-Preliminary Academic Review Rule
+## Preliminary Academic Review Rule
 
 The project may include a simple GPA/CGPA-based review classification:
 
-2.00–2.49: High concern — review support needs.
-2.50–2.99: Needs attention — review support needs.
-Other categories: No GPA-based flag.
+* **2.00–2.49:** High concern — review support needs.
+* **2.50–2.99:** Needs attention — review support needs.
+* **Other categories:** No GPA-based flag.
 
 These categories are preliminary review labels, not validated predictions or definitive assessments of individual students. The thresholds should be checked against the relevant institutional grading policy.
 
 A student with no GPA-based flag may still need academic support. Missing GPA/CGPA values should be handled separately.
 
-Key Learning Outcomes
+## Key Learning Outcomes
 
 This project demonstrates practical experience with:
 
-Loading CSV files into Pandas.
-Inspecting datasets and column types.
-Identifying missing and duplicate values.
-Preparing categorical data for analysis.
-Creating cross-tabulations and frequency summaries.
-Comparing categories using bar charts.
-Visualizing categorical distributions.
-Organizing analysis in a Jupyter Notebook.
-Interpreting findings while acknowledging limitations.
-Limitations
-The dataset contains approximately 50 survey responses.
-Responses are self-reported and may contain inaccuracies.
-The sample may not represent the wider student population.
-Differences between groups may be affected by sample size.
-Observed associations do not prove causation.
-The preliminary GPA review rule is not a validated risk model.
-Ethical Considerations
+* Loading CSV files into Pandas.
+* Inspecting datasets and column types.
+* Identifying missing and duplicate values.
+* Preparing categorical data for analysis.
+* Creating cross-tabulations and frequency summaries.
+* Comparing categories using bar charts.
+* Visualizing categorical distributions.
+* Organizing analysis in a Jupyter Notebook.
+* Interpreting findings while acknowledging limitations.
+
+## Limitations
+
+* The dataset contains approximately 50 survey responses.
+* Responses are self-reported and may contain inaccuracies.
+* The sample may not represent the wider student population.
+* Differences between groups may be affected by sample size.
+* Observed associations do not prove causation.
+* The preliminary GPA review rule is not a validated risk model.
+
+## Ethical Considerations
 
 Respondent privacy is important. Do not publish the original survey CSV or expose information that could identify participants. Share only appropriate, anonymized outputs, and use the survey data consistently with the participants' consent.
 
-Future Improvements
+## Future Improvements
 
 Potential improvements include:
 
-Collecting more responses from different academic disciplines and institutions.
-Exploring relationships involving sleep, revision, assignment completion, and internet usage.
-Adding appropriate statistical analysis.
-Improving data-quality checks.
-Validating any future student-support classification method before practical use.
-Author
+* Collecting more responses from different academic disciplines and institutions.
+* Exploring relationships involving sleep, revision, assignment completion, and internet usage.
+* Adding appropriate statistical analysis.
+* Improving data-quality checks.
+* Validating any future student-support classification method before practical use.
 
-IS Eyamin
+## Author
+
+**IS Eyamin**
 
 Computer Science and Engineering Undergraduate
 
 Daffodil International University, Bangladesh
 
-Project Status
+## Project Status
 
-Status: Exploratory data analysis in progress / completed after all notebook cells have been executed and checked.
+**Status:** Exploratory data analysis in progress / completed after all notebook cells have been executed and checked.
 
 This project is an educational portfolio project demonstrating foundational data analysis and visualization skills in Python.
